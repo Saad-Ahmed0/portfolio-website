@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: #1d2433;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: end; */
+    width: 99vw;
+    height: 10vh;
+
+}
+.navbar a:hover{
+color: white;
+}
+.logo{
+    padding-left: 7%;
+}
+
+.nav{
+    padding-right: 7%;
+}
+li.nav-item{
+    color: white;
+}
+.items a{
+color: white;    
+}
+.logo{
+    color: white;
+}
+.navi{
+    height: 4%;
+    width: 100%;
+    background-color: #313131;
+}
+
+.img-con{
+    /* border: 2px solid black; */
+    width: 50vw;
+}
+.img-con img{
+    height: 65vh;
+    width: 20vw;
+    margin-left: 20%;
+    margin-top : 5%;
+    border-radius: 30%;
+}
+.content{
+    margin-top: 10%;
+    color: white;
+}
+.about, .skills, .portfolio, .contact{
+    padding: 40px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #b5ccbb; */
+  }
+  .about p{
+    width: 50%;
+    text-align: center;
+  }
+  .skills-grid{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* border: 2px solid; */
+}
+.skills-grid div{
+    /* border: 2px solid; */
+    padding: 10px;
+    background-color: #212529;
+    color: white;
+    border-radius: 6px;
+}
+.portfolio{
+    /* padding: 40px 20px; */
+height: 120vh;
+/* background-color :#b5ccbb; */
+}
+.portfolio-gallery{
+ /* border: 2px solid; */
+ /* background-color: blue; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        /* grid-template-columns:repeat(17, 1fr); */
+}
+.portfolio-item{
+    height: 200px;
+    /* width: 500px; */
+    background: #333;
+    border-radius: 10px;
+    /* margin-left: 200px; */
+}
+.portfolio-item img{
+    height: 31vh;
+    width: 32vw;
+    border-radius: 10px;
+}
+.portfolio button{
+    background-color: #212529;
+    color: #000;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1%;
+}
+.contact-us{
+height: 100vh;
+margin-top: -25px;
+}
+.container h2{
+    color: white;
+}
+.container label{
+    color: white;
+}
+.footer{
+    background-color: #1d2433;
+color: white;
+width: 98vw;
+/* margin-left: -10px; */
+}
+.tags li a{
+    color: white;
+    background-color: white;
+    border: 2px solid white;
+    text-decoration: none;
+}
+.carousel{
+    margin-top: -08px; 
+    height: 120vh; 
+    background-image: url(./img/hero.jpg); 
+    background-size: cover;  
+}
+
+@media screen and (max-width: 480px) {
+    .portfolio-item{
+        height: 10vh;
+        width: 36vw;
+        border-radius: 10px;
+    }
+    .portfolio-item img{
+        
+        height: 10vh;
+        width: 36vw;
+        border-radius: 10px
+    }
+    .portfolio-gallery{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .carousel{
+        border: 2px solid black;
+        height: 190vh;
+    }
+    .carousel img{
+        height: 170vh;
+        margin-top: -20%;
+    }
+}
+
+
